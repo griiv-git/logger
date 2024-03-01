@@ -1,0 +1,20 @@
+{
+    "name": "griiv/logger",
+    "authors": [
+        {
+            "name": "Arnaud Scote",
+            "email": "arnaud@infra.fr"
+        }
+    ],
+    "description": "Permet d'écrire des logs customs dans /var/logs",
+    "autoload": {
+        "psr-4": {
+            "Griiv\\Logger\\": "src/"
+        }
+    },
+    "type": "library",
+    "require": {
+        "php": ">=7.2",
+        "psr/log": "^1.1"
+    }
+}
