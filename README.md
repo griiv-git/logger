@@ -29,20 +29,20 @@ Il y a une methode pour logger chaque niveau.
 
 A savoir que le niveau 'error' sera logger dans le fichier `var/logs/phperror.log`. 
 
-La classe à utiliser pour écrire un log est `InfraLogger\InfraLogger`.
+La classe à utiliser pour écrire un log est `Griiv\Logger`.
 
-    InfraLogger::debug("test debug log");
-    InfraLogger::alert("test alert log");
-    InfraLogger::emergency("test emergency log");
-    InfraLogger::notice("test notice log");
-    InfraLogger::critical("test critical log");
-    InfraLogger::error("test error log");
-    InfraLogger::warning("test warning log");
-    InfraLogger::info("test info log");
+    Logger::debug("test debug log");
+    Logger::alert("test alert log");
+    Logger::emergency("test emergency log");
+    Logger::notice("test notice log");
+    Logger::critical("test critical log");
+    Logger::error("test error log");
+    Logger::warning("test warning log");
+    Logger::info("test info log");
     
 Il est aussi possible de logger les exception dans un fichier séparer (`var/logs/exception.log).
 
-    InfraLogger::exception(new Exception());
+    Logger::exception(new Exception());
 
 
 
