@@ -14,13 +14,13 @@ class Logger
 {
 
     /**
-     * @var Logger
+     * @var AbstractLogger
      */
     private $logger;
 
     public function __construct()
     {
-        $this->logger = new Logger();
+        $this->logger = new AbstractLogger();
     }
 
     /**
@@ -30,7 +30,7 @@ class Logger
     private static $instance = null;
 
     /**
-     * @return Logger|null
+     * @return AbstractLogger|null
      */
     private static function getInstance()
     {
@@ -41,7 +41,7 @@ class Logger
     }
 
     /**
-     * @return Logger
+     * @return AbstractLogger
      */
     public function getLogger()
     {
